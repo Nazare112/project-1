@@ -1,0 +1,258 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1B1B1B;
+  height: 141px;
+}
+header img {
+  margin-left: 65px;
+  margin-top: 20px;
+  margin-bottom: -40px;
+}
+
+.header_navigation {
+  margin-right: 65px;
+}
+.header_navigation a {
+  color: #ffffff;
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.header_navigation #active_hav {
+  color: #F68000;
+}
+.header_navigation #active_hav::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -61px;
+  width: 100%;
+  height: 6px;
+  color: #F68000;
+  background-color: #F68000;
+  transition: width 0s ease;
+}
+.header_navigation a:hover {
+  text-decoration: none;
+  color: #F68000;
+}
+.header_navigation a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -61px;
+  width: 0;
+  transition: width 0.3s ease;
+  height: 6px;
+  background-color: #F68000;
+}
+.header_navigation a:hover:after {
+  width: 100%;
+}
+
+.welcome {
+  padding-bottom: 100px;
+  display: flex;
+}
+
+.welcome_text {
+  white-space: nowrap;
+  margin-top: 258px;
+  z-index: 5;
+  margin-left: 103px;
+}
+.welcome_text h1 {
+  font-weight: 700;
+  font-size: 53px;
+  line-height: 1.3;
+  color: #F68000;
+}
+.welcome_text p {
+  margin-top: 65px;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #212121;
+}
+.welcome_text button {
+  margin-top: 65px;
+  width: 473px;
+  height: 82px;
+  border-radius: 42px;
+  background-color: #F68000;
+  font-size: 46px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  border: none;
+  box-shadow: 2px 5px 11px 0px rgba(0, 0, 0, 0.1490196078);
+  box-shadow: 6px 20px 21px 0px rgba(0, 0, 0, 0.1294117647);
+  box-shadow: 14px 44px 28px 0px rgba(0, 0, 0, 0.0784313725);
+  box-shadow: 24px 79px 33px 0px rgba(0, 0, 0, 0.0196078431);
+  box-shadow: 38px 123px 36px 0px rgba(0, 0, 0, 0);
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+.welcome_text button:hover {
+  background-color: #e17705;
+  cursor: pointer;
+}
+
+.welcome_images {
+  position: absolute;
+  right: 0;
+  width: 640px;
+  height: 837px;
+  background: url(../images/about_us/welcome/background.png);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.welcome_images button {
+  position: relative;
+  bottom: 15px;
+  height: 8px;
+  width: 69px;
+  background-color: #707070;
+  border: none;
+  cursor: pointer;
+  margin: 0 11.5px 17px 11.5px;
+  bottom: 13px;
+  transition: background-color 0.3s ease;
+}
+.welcome_images button:hover {
+  background-color: #F68000;
+}
+.welcome_images #active_image_button {
+  background-color: #F68000;
+}
+
+.information {
+  width: 85%;
+  margin: 0 auto;
+  padding: 150px 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.information div {
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.information div h1 {
+  position: relative;
+  display: inline-block;
+  font-weight: 200;
+  font-size: 44.63px;
+  margin-bottom: 10px;
+  color: #0B0B0B;
+}
+.information div h1:before {
+  content: "";
+  position: absolute;
+  bottom: -18px;
+  left: -25px;
+  width: 17px;
+  height: 17px;
+  background-color: #F68000;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.information div h1:after {
+  content: "";
+  position: absolute;
+  left: -25px;
+  bottom: 0;
+  width: 103%;
+  height: 1px;
+  background-color: #303030;
+}
+.information div p {
+  font-weight: 200;
+  color: #0B0B0B;
+  font-size: 24px;
+  line-height: 1.6;
+}
+.information .right_text {
+  align-items: flex-end;
+}
+
+.start {
+  margin: 0 auto;
+  position: relative;
+  max-width: 1256px;
+}
+
+.start_background {
+  height: 651px;
+  position: relative;
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.start_form {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 422px;
+  height: 600px;
+  top: 0;
+  left: 0px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.form_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24.74px;
+  font-weight: 700;
+  height: 108px;
+  background-color: #3C3C3C;
+  color: #FFFFFF;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  margin-bottom: 22px;
+}
+
+.form_inputs {
+  align-items: center;
+  top: 10px;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+}
+.form_inputs input {
+  padding: 10px;
+  margin: 15px 0;
+  width: 355px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid rgba(150, 147, 147, 0.433);
+  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.1019607843) inset;
+  box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.0901960784) inset;
+  box-shadow: 8px 7px 7px 0px rgba(0, 0, 0, 0.0509803922) inset;
+  box-shadow: 14px 13px 8px 0px rgba(0, 0, 0, 0.0117647059) inset;
+  box-shadow: 23px 20px 8px 0px rgba(0, 0, 0, 0) inset;
+}
+
+button {
+  width: 376px;
+  height: 71px;
+  top: 2604px;
+  left: 246px;
+  gap: 0px;
+  opacity: 0px;
+}/*# sourceMappingURL=about us.css.map */
